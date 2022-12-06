@@ -1,3 +1,13 @@
+
+*,*:before, *:after {
+
+  box-sizing: border-box ; 
+  padding: 0 ;
+  margin: 0 ;  
+  
+  }
+  
+
 .App {
   text-align: center;
 }
@@ -35,4 +45,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+.contents {
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap: 2em;
+}
+
+li {
+  padding-top: 1em;
+}
+
+h2 {
+  padding:1em;
+  font-size: 1.2em;
+  width: 20em;
+  text-align: center;
+}
+
+.review-image {
+  width: 20em;
+  height: 14em;
+  border-radius: 1em;
+  object-fit: cover;
 }
