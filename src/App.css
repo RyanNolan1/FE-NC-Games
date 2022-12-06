@@ -50,11 +50,17 @@
 .header {
   padding: 1.5em;
   font-size: 1.5em;
+  background-color: #031927;
+  color: white;
+  min-width:100vw;
 }
 
 .contents {
-  background-color: #ffffff;
+  background-color: #508AA8;
   justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-width:100vw;
 }
 
 ul {
@@ -75,6 +81,11 @@ h2 {
   font-size: 1.2em;
   width: 20em;
   text-align: center;
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 
 .review-image {
@@ -82,4 +93,6 @@ h2 {
   height: 14em;
   border-radius: 1em;
   object-fit: cover;
+  border: 2px;
+  border-style: solid;
 }
