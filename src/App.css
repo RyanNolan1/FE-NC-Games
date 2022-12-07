@@ -4,21 +4,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: #508aa8;
 }
 
 .App {
   text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -30,7 +20,10 @@
   font-size: 1.5em;
   background-color: #031927;
   color: white;
-  min-width: 10vw;
+}
+
+h1 {
+  background-color: #031927;
 }
 
 .contents {
@@ -97,10 +90,12 @@ h3 {
 
 .review-body {
   max-width: 46em;
-  font-size: 1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  font-size: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-bottom: 2em;
+  color: #031927;
+  font-weight: 600;
 }
 
 .single-review-image {
@@ -114,7 +109,6 @@ h3 {
 }
 
 .links {
-  padding: 2em;
   font-size: 1em;
   width: 20em;
   text-align: center;
@@ -124,4 +118,15 @@ h3 {
 
 .links:hover {
   text-decoration: underline;
+}
+
+.review-info {
+  display: flex;
+  gap: 2em;
+  font-size: 1em;
+  color: white;
+  font-weight: 600;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
 }
