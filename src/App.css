@@ -1,26 +1,13 @@
-
-*,*:before, *:after {
-
-  box-sizing: border-box ; 
-  padding: 0 ;
-  margin: 0 ;  
-  
-  }
-  
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -38,37 +25,27 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header {
   padding: 1.5em;
   font-size: 1.5em;
   background-color: #031927;
   color: white;
-  min-width:100vw;
+  min-width: 10vw;
 }
 
 .contents {
-  background-color: #508AA8;
+  background-color: #508aa8;
   justify-content: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  min-width:100vw;
 }
 
 ul {
   list-style: none;
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 2em;
 }
 
@@ -77,7 +54,7 @@ li {
 }
 
 h2 {
-  padding:1em;
+  padding-top: 1em;
   font-size: 1.2em;
   width: 20em;
   text-align: center;
@@ -86,6 +63,7 @@ h2 {
 
 h3 {
   color: white;
+  padding: 1em;
 }
 
 .review-image {
@@ -95,4 +73,55 @@ h3 {
   object-fit: cover;
   border: 2px;
   border-style: solid;
+}
+
+.review-container {
+  background-color: #508aa8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-top: 2em;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.review-header {
+  font-size: 1.4em;
+  width: 1.2em;
+  width: 16em;
+  text-align: center;
+  color: white;
+}
+
+.review-body {
+  max-width: 46em;
+  font-size: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 2em;
+}
+
+.single-review-image {
+  width: 80vw;
+  max-width: 40em;
+  border-radius: 1em;
+  object-fit: cover;
+  border: 2px;
+  border-style: solid;
+  justify-content: center;
+}
+
+.links {
+  padding: 2em;
+  font-size: 1em;
+  width: 20em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.links:hover {
+  text-decoration: underline;
 }
