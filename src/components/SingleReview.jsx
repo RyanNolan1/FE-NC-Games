@@ -23,6 +23,11 @@ const SingleReview = () => {
         <h2 className="review-header"> {review.title} </h2>
         <h3 className="review-category"> {review.category}</h3>
         <p className="review-body"> {review.review_body} </p>
+        <section className="review-info">
+        <p className="review-votes"> Votes: {review.votes} </p>
+        <p className="review-owner"> Author: {review.owner} </p>
+        <p className="review-date"> Created On: {Date(review.created_at).substring(0,15)} </p>
+        </section>
       </div>
     );
   };
