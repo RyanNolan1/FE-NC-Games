@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getSingleReview } from '../api.js'
+import Comments from './Comments'
 
 const SingleReview = () => {
     const [review, setReview] = useState({})
@@ -28,6 +28,7 @@ const SingleReview = () => {
         <p className="review-owner"> Author: {review.owner} </p>
         <p className="review-date"> Created On: {Date(review.created_at).substring(0,15)} </p>
         </section>
+        <Comments />
       </div>
     );
   };

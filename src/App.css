@@ -93,14 +93,15 @@ h3 {
   font-size: 1.2em;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 2em;
-  color: #031927;
+  padding-bottom: 1em;
+  color: white;
   font-weight: 600;
 }
 
 .single-review-image {
   width: 80vw;
   max-width: 40em;
+  max-height: 30em;;
   border-radius: 1em;
   object-fit: cover;
   border: 2px;
@@ -123,10 +124,50 @@ h3 {
 .review-info {
   display: flex;
   gap: 2em;
-  font-size: 1em;
+  font-size: 1.2em;
   color: white;
   font-weight: 600;
   padding-left: 2em;
   padding-right: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.comments-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.comments-list {
+  max-width: 46em;
+  font-size: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-bottom: 2em;
+  color: white;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.view-comments {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-align:center;
+  padding: 1em;
+  justify-content: center;
+  align-items:center;
+}
+
+.view-comments:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.bottom-of-comments {
+  color: #508aa8;
 }

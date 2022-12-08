@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const gameApi = axios.create({
-  baseURL: 'https://eager-getup-ant.cyclic.app/api/'
-})
-
+  baseURL: "https://eager-getup-ant.cyclic.app/api/",
+});
 
 export const getReviews = () => {
   return axios
@@ -13,9 +12,16 @@ export const getReviews = () => {
     });
 };
 
-export const getSingleReview = ( review_id ) => {
+export const getSingleReview = (review_id) => {
   return gameApi.get(`reviews/${review_id}`).then((res) => {
-      console.log(res.data)
-      return res.data.review
-    })
-  }
+    return res.data.review;
+  });
+};
+
+// added a function to return comments
+
+export const getReviewComments = (review_id) => {
+  return gameApi.get(`reviews/${review_id}/comments`).then((res) => {
+    return res.data.review;
+  });
+};

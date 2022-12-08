@@ -3,7 +3,8 @@ import Reviews from "./components/Reviews.jsx";
 import Header from "./components/Header.jsx";
 // import Nav from "./components/Nav.jsx";
 import { Routes, Route } from "react-router-dom";
-import SingleReview from './components/SingleReview.jsx'
+import SingleReview from "./components/SingleReview.jsx";
+import Comments from "./components/Comments.jsx"
 
 function App() {
   return (
@@ -12,6 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Reviews />} />
         <Route path="/reviews/:review_id" element={<SingleReview />} />
+        <Route
+          path="/reviews/:review_id/comments"
+          element={<Comments />}
+        />
+        // added a new route
       </Routes>
     </main>
   );
