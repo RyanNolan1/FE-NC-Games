@@ -26,11 +26,11 @@ const Comments = () => {
         <div className="view-comments" onClick={handleClick}>View Comments</div>
         {isShown && (
           <ul className="comments-list">
-            {comments.map((comment) => {
+            {comments.length > 0 ? comments.map((comment) => {
                 return (
                     <li>"{comment.body}"</li>
                     )
-                })}
+                }): <div className="comments-list">This review has no comments</div>}
                 <div className="bottom-of-comments" ref={ref}>.</div>
                 </ul>
         )}
