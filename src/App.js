@@ -17,7 +17,6 @@ function App() {
           path="/reviews/:review_id/comments"
           element={<Comments />}
         />
-        // added a new route
       </Routes>
     </main>
   );
