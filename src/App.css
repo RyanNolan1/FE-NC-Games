@@ -4,6 +4,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
   background-color: #508aa8;
 }
 
@@ -11,12 +14,8 @@
   text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .header {
-  padding: 1.5em;
+  padding: 1em;
   font-size: 1.5em;
   background-color: #031927;
   color: white;
@@ -27,7 +26,6 @@ h1 {
 }
 
 .contents {
-  background-color: #508aa8;
   justify-content: center;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -48,6 +46,8 @@ li {
 
 h2 {
   padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1.2em;
   width: 20em;
   text-align: center;
@@ -69,7 +69,6 @@ h3 {
 }
 
 .review-container {
-  background-color: #508aa8;
   display: flex;
   flex-direction: column;
   padding-top: 2em;
@@ -82,10 +81,10 @@ h3 {
 
 .review-header {
   font-size: 1.4em;
-  width: 1.2em;
-  width: 16em;
   text-align: center;
   color: white;
+  width:100%;
+  font-size: 1.5em;
 }
 
 .review-body {
@@ -100,8 +99,8 @@ h3 {
 
 .single-review-image {
   width: 80vw;
-  max-width: 40em;
-  max-height: 30em;;
+  max-width: 30em;
+  max-height: 25em;;
   border-radius: 1em;
   object-fit: cover;
   border: 2px;
@@ -132,6 +131,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 
@@ -142,7 +142,7 @@ h3 {
 }
 .comments-list {
   max-width: 46em;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 2em;
@@ -170,4 +170,37 @@ h3 {
 
 .bottom-of-comments {
   color: #508aa8;
+}
+
+.votes {
+  display: flex;
+  flex-direction: row;
+  gap: .5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.upvote {
+ color:white;
+ background-color:green;
+ padding:.5em;
+ border-radius: 1em;
+ border-color: white;
+ border-width: 2px;
+
+}
+
+.downvote {
+  color:white;
+ background-color:rgb(128, 23, 0);
+ padding:.5em;
+ border-radius: 1em;
+ border-color: white;
+ border-width: 2px;
+
+}
+
+footer {
+  height: 1em;
+  width: 100%;
 }
