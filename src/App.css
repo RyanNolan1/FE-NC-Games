@@ -200,7 +200,26 @@ h3 {
 
 }
 
-footer {
-  height: 1em;
-  width: 100%;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height:50em;
+}
+
+.add-comment {
+  gap:2em;
+  height:2em;
+}
+
+textarea {
+  height: 6em;
+  background-color: rgb(255, 255, 255);
+  width: 46em;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-button {
+  height:2em;
+  width: 5em;
 }

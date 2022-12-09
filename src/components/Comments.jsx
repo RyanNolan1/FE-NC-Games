@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { getReviewComments } from "../api.js";
+import AddComment from '../components/AddComment';
 
 const Comments = () => {
   const [comments, setComments] = useState([]);
@@ -29,7 +30,11 @@ const Comments = () => {
         <ul className="comments-list">
           {comments.length > 0 ? (
             comments.map((comment) => {
-              return <li>"{comment.body}"</li>;
+              return (
+                <li>
+                  "{comment.body}" - {comment.author}
+                </li>
+              );
             })
           ) : (
             <div className="comments-list">This review has no comments</div>
@@ -37,6 +42,7 @@ const Comments = () => {
           <div className="bottom-of-comments" ref={ref}>
             .
           </div>
+          <AddComment setComments={setComments} review_id={review_id}/>
         </ul>
       )}
     </div>

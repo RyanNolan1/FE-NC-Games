@@ -25,15 +25,21 @@ export const getReviewComments = (review_id) => {
 };
 
 export const upVoteReview = (review_id) => {
-  return gameApi.patch(`reviews/${review_id}`, {inc_votes: 1})
-  .then((res) => {
-    return res.data.votes
-  })
+  return gameApi.patch(`reviews/${review_id}`, { inc_votes: 1 }).then((res) => {
+    return res.data.votes;
+  });
 };
 
 export const downVoteReview = (review_id) => {
-  return gameApi.patch(`reviews/${review_id}`, {inc_votes: -1})
-  .then((res) => {
+  return gameApi
+    .patch(`reviews/${review_id}`, { inc_votes: -1 })
+    .then((res) => {
+      return res;
+    });
+};
+
+export const postComment = (review_id, body) => {
+  return gameApi.post(`reviews/${review_id}/comments`, body).then((res) => {
     return res
-  })
+  });
 };
