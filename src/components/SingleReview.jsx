@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getSingleReview, patchReview } from "../api.js";
+import { getSingleReview } from "../api.js";
 import Comments from "./Comments";
 import Votes from "./Votes";
 
